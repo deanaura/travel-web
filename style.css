@@ -1,0 +1,140 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #555;
+  --hover-color: green;
+  --logo-color: white;
+  --menu-item-color: white;
+  --btn-2-hover: rgb(2, 175, 2);
+  --btn-2-bg-color: green;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--menu-item-color);
+  padding: 0 50px;
+}
+
+nav .logo {
+  text-decoration: none;
+  color: var(--btn-2-bg-color);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.menu-list li a {
+  display: block;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.btn-list {
+  display: flex;
+  list-style: none;
+}
+
+.btn-list li {
+  margin-left: 10px;
+}
+
+.btn-list li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.btn-1 {
+  background-color: var(--menu-item-color);
+  color: var(--primary-color);
+}
+
+.btn-2 {
+  color: var(--menu-item-color);
+  background-color: var(--btn-2-bg-color);
+}
+
+.btn-2:hover {
+  background-color: var(--btn-2-hover);
+  color: var(--menu-item-color);
+}
+
+nav li a:hover {
+  background-color: var(--hover-color);
+  color: var(--menu-item-color);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 0 20px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .logo {
+    margin-top: 10px;
+  }
+
+  .menu-list,
+  .btn-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-list li,
+  .btn-list li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .menu-list.active,
+  btn-list.active {
+    display: flex;
+  }
+
+  .btn-2:hover {
+    background-color: var(--btn-2-hover);
+    color: var(--menu-item-color);
+  }
+
+  nav li a:hover {
+    background-color: var(--hover-color);
+    color: var(--menu-item-color);
+  }
+}
