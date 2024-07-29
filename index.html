@@ -12,7 +12,9 @@
   </head>
   <body>
     <nav>
-      <a href="index.html" class="logo">Travello</a>
+      <a href="index.html" class="logo"
+        >Travello<span class="entypo--aircraft-take-off"></span
+      ></a>
       <ul class="menu-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="#">About</a></li>
@@ -30,10 +32,32 @@
     <div class="hero-section">
       <div class="container">
         <div class="hero-text">
-          <h1>
-            Go Explore <br class="divider" />
-            Around The World
-          </h1>
+          <h1>Adventure awaits</h1>
+          <h2>See the world and find yourself</h2>
+        </div>
+        <div class="hero-ticket">
+          <form class="form-destination">
+            <select name="start">
+              <option value="CGK">Jakarta</option>
+              <option value="BDO">Bandung</option>
+              <option value="MLG">Malang</option>
+              <option value="JOG">Yogyakarta</option>
+              <option value="SOC">Solo</option>
+              <option value="KOE">Kupang</option>
+            </select>
+            <p>To</p>
+            <select name="finish">
+              <option value="CGK">Jakarta</option>
+              <option value="BDO">Bandung</option>
+              <option value="MLG">Malang</option>
+              <option value="JOG">Yogyakarta</option>
+              <option value="SOC">Solo</option>
+              <option value="KOE">Kupang</option>
+            </select>
+            <button class="btn" name="btn-destination" type="submit">
+              Destination
+            </button>
+          </form>
         </div>
       </div>
     </div>
