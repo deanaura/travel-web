@@ -20,8 +20,10 @@ body {
 
 section {
   margin-top: 100px;
+  margin-bottom: 50px;
   padding: 0 100px;
 }
+
 
 /* navbar */
 nav {
@@ -190,7 +192,6 @@ nav li a:hover {
 }
 
 .about-img img {
-  margin-left: 100px;
   width: 30%;
   height: auto;
   width: 40vw;
@@ -272,7 +273,6 @@ nav li a:hover {
 .service-container {
   width: 80%;
   margin: 0 auto;
-  padding-bottom: 80px;
 }
 
 .service-container h1 {
@@ -463,6 +463,81 @@ nav li a:hover {
 }
 
 /* detination section end*/
+
+/* testimonials section */
+.testi-container {
+  max-width: 1170px;
+}
+
+.testi-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.testi-header .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+
+.testi-header span {
+  color: var(--btn-2-bg-color);
+}
+
+.testi-items {
+  background-color: var(--btn-2-bg-color);
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.testi-items .info {
+  display: flex;
+  align-items: center;
+}
+
+.testi-items img {
+  max-width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.testi-items .name {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.2;
+}
+
+.testi-items .job {
+  text-transform: capitalize;
+  color: hsl(0, 13%, 86%);
+}
+
+.testi-items p {
+  margin-top: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+.testi-items .rating {
+  margin-top: 15px;
+  font-size: 14px;
+  color: hsl(36, 88%, 66%);
+}
+
+.testimonials .swiper-pagination {
+  position: relative;
+  margin-top: 40px;
+  bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet {
+  height: 8px;
+  width: 8px;
+  background-color: var(--btn-2-bg-color);
+}
 
 /* footer section  */
 .footer-section {

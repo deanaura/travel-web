@@ -10,6 +10,12 @@
     />
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Travelling With Us</title>
   </head>
   <body>
@@ -21,7 +27,7 @@
       <ul class="menu-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#">Destination</a></li>
+        <li><a href="#destination">Destination</a></li>
         <li><a href="#">Tour</a></li>
         <li><a href="#">Blog</a></li>
       </ul>
@@ -69,7 +75,7 @@
     <!-- hero end -->
 
     <!-- about start -->
-    <section id="about"></section>
+    <section id="about">
       <div class="about-container">
         <div class="about-img">
           <img src="assets/img/about.jpg" alt="about">
@@ -126,149 +132,270 @@
 
 
     <!-- Destination start -->
-    <div class="destination-section">
-      <div class="title">
-        <h3>Best Place</h3>
-        <h1>Our Best <span>Tour</span> Package</h1>
-      </div>
-      <div class="card-container">
-        <button class="btn-mundur">&lt;</button>
-        <div class="card-list-wrapper">
-          <div class="card-list">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/img.jpg" alt="">
-              </div>
-              <div class="card-text">
-                <div class="main">
-                  <h4>Maldives</h4>
-                  <p>3 room</p>
-                </div>
-                <p class="price">Rp.150K /night</p>
-                <div class="btn-read">
-                  <a href="" class="read-more">Read More</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/img.jpg" alt="">
-              </div>
-              <div class="card-text">
-                <div class="main">
-                  <h4>Maldives</h4>
-                  <p>3 room</p>
-                </div>
-                <p class="price">Rp.150K /night</p>
-                <div class="btn-read">
-                  <a href="" class="read-more">Read More</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/img.jpg" alt="">
-              </div>
-              <div class="card-text">
-                <div class="main">
-                  <h4>Maldives</h4>
-                  <p>3 room</p>
-                </div>
-                <p class="price">Rp.150K /night</p>
-                <div class="btn-read">
-                  <a href="" class="read-more">Read More</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/img.jpg" alt="">
-              </div>
-              <div class="card-text">
-                <div class="main">
-                  <h4>Maldives</h4>
-                  <p>3 room</p>
-                </div>
-                <p class="price">Rp.150K /night</p>
-                <div class="btn-read">
-                  <a href="" class="read-more">Read More</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/img.jpg" alt="">
-              </div>
-              <div class="card-text">
-                <div class="main">
-                  <h4>Maldives</h4>
-                  <p>3 room</p>
-                </div>
-                <p class="price">Rp.150K /night</p>
-                <div class="btn-read">
-                  <a href="" class="read-more">Read More</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/img.jpg" alt="">
-              </div>
-              <div class="card-text">
-                <div class="main">
-                  <h4>Maldives</h4>
-                  <p>3 room</p>
-                </div>
-                <p class="price">Rp.150K /night</p>
-                <div class="btn-read">
-                  <a href="" class="read-more">Read More</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/img.jpg" alt="">
-              </div>
-              <div class="card-text">
-                <div class="main">
-                  <h4>Maldives</h4>
-                  <p>3 room</p>
-                </div>
-                <p class="price">Rp.150K /night</p>
-                <div class="btn-read">
-                  <a href="" class="read-more">Read More</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/img.jpg" alt="">
-              </div>
-              <div class="card-text">
-                <div class="main">
-                  <h4>Maldives</h4>
-                  <p>3 room</p>
-                </div>
-                <p class="price">Rp.150K /night</p>
-                <div class="btn-read">
-                  <a href="" class="read-more">Read More</a>
-                </div>
-              </div>
-            </div>
-            
-          </div>
+    <section id="destination">
+      <div class="destination-section">
+        <div class="title">
+          <h3>Best Place</h3>
+          <h1>Our Best <span>Tour</span> Package</h1>
         </div>
-        <button class="btn-maju">&gt;</button>
+        <div class="card-container">
+          <button class="btn-mundur">&lt;</button>
+          <div class="card-list-wrapper">
+            <div class="card-list">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/img.jpg" alt="">
+                </div>
+                <div class="card-text">
+                  <div class="main">
+                    <h4>Maldives</h4>
+                    <p>3 room</p>
+                  </div>
+                  <p class="price">Rp.150K /night</p>
+                  <div class="btn-read">
+                    <a href="" class="read-more">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/img.jpg" alt="">
+                </div>
+                <div class="card-text">
+                  <div class="main">
+                    <h4>Maldives</h4>
+                    <p>3 room</p>
+                  </div>
+                  <p class="price">Rp.150K /night</p>
+                  <div class="btn-read">
+                    <a href="" class="read-more">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/img.jpg" alt="">
+                </div>
+                <div class="card-text">
+                  <div class="main">
+                    <h4>Maldives</h4>
+                    <p>3 room</p>
+                  </div>
+                  <p class="price">Rp.150K /night</p>
+                  <div class="btn-read">
+                    <a href="" class="read-more">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/img.jpg" alt="">
+                </div>
+                <div class="card-text">
+                  <div class="main">
+                    <h4>Maldives</h4>
+                    <p>3 room</p>
+                  </div>
+                  <p class="price">Rp.150K /night</p>
+                  <div class="btn-read">
+                    <a href="" class="read-more">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/img.jpg" alt="">
+                </div>
+                <div class="card-text">
+                  <div class="main">
+                    <h4>Maldives</h4>
+                    <p>3 room</p>
+                  </div>
+                  <p class="price">Rp.150K /night</p>
+                  <div class="btn-read">
+                    <a href="" class="read-more">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/img.jpg" alt="">
+                </div>
+                <div class="card-text">
+                  <div class="main">
+                    <h4>Maldives</h4>
+                    <p>3 room</p>
+                  </div>
+                  <p class="price">Rp.150K /night</p>
+                  <div class="btn-read">
+                    <a href="" class="read-more">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/img.jpg" alt="">
+                </div>
+                <div class="card-text">
+                  <div class="main">
+                    <h4>Maldives</h4>
+                    <p>3 room</p>
+                  </div>
+                  <p class="price">Rp.150K /night</p>
+                  <div class="btn-read">
+                    <a href="" class="read-more">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/img.jpg" alt="">
+                </div>
+                <div class="card-text">
+                  <div class="main">
+                    <h4>Maldives</h4>
+                    <p>3 room</p>
+                  </div>
+                  <p class="price">Rp.150K /night</p>
+                  <div class="btn-read">
+                    <a href="" class="read-more">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <button class="btn-maju">&gt;</button>
+        </div>
       </div>
-    </div>
+    </section>
     <!-- Destination end  -->
+
+    <!-- testi start -->
+    <section class="testimonials">
+      <div class="testi-container">
+        <div class="testi-header">
+          <h2 class="title">what <span>our client</span> say</h2>
+        </div>
+        <div class="testi-content">
+          <div class="swiper testi-slider js-testi-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testi-items">
+                <div class="info">
+                  <img src="assets/img/user1.jpg" alt="img">
+                  <div class="text-box">
+                    <h3 class="name">Clara Pansie</h3>
+                    <span class="job">Accountant</span>
+                  </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veniam reprehenderit aliquid maxime sequi placeat eaque quia? Est, soluta iusto!</p>
+                <div class="rating">
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star-half' ></i>
+                </div>
+              </div>
+              <div class="swiper-slide testi-items">
+                <div class="info">
+                  <img src="assets/img/user2.jpg" alt="img">
+                  <div class="text-box">
+                    <h3 class="name">Laura Ann</h3>
+                    <span class="job">Data Analyst</span>
+                  </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veniam reprehenderit aliquid maxime sequi placeat eaque quia? Est, soluta iusto!</p>
+                <div class="rating">
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star-half' ></i>
+                </div>
+              </div>
+              <div class="swiper-slide testi-items">
+                <div class="info">
+                  <img src="assets/img/user3.jpg" alt="img">
+                  <div class="text-box">
+                    <h3 class="name">Kiara Monica</h3>
+                    <span class="job">Web Developer</span>
+                  </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veniam reprehenderit aliquid maxime sequi placeat eaque quia? Est, soluta iusto!</p>
+                <div class="rating">
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star-half' ></i>
+                </div>
+              </div>
+              <div class="swiper-slide testi-items">
+                <div class="info">
+                  <img src="assets/img/user4.jpg" alt="img">
+                  <div class="text-box">
+                    <h3 class="name">Gina Evelyn</h3>
+                    <span class="job">Executive Marketing</span>
+                  </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veniam reprehenderit aliquid maxime sequi placeat eaque quia? Est, soluta iusto!</p>
+                <div class="rating">
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star-half' ></i>
+                </div>
+              </div>
+              <div class="swiper-slide testi-items">
+                <div class="info">
+                  <img src="assets/img/user2.jpg" alt="img">
+                  <div class="text-box">
+                    <h3 class="name">Wilona Axel</h3>
+                    <span class="job">Carpenter</span>
+                  </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veniam reprehenderit aliquid maxime sequi placeat eaque quia? Est, soluta iusto!</p>
+                <div class="rating">
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star-half' ></i>
+                </div>
+              </div>
+              <div class="swiper-slide testi-items">
+                <div class="info">
+                  <img src="assets/img/user1.jpg" alt="img">
+                  <div class="text-box">
+                    <h3 class="name">Viona Neila</h3>
+                    <span class="job">Programmer</span>
+                  </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veniam reprehenderit aliquid maxime sequi placeat eaque quia? Est, soluta iusto!</p>
+                <div class="rating">
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star'  ></i>
+                  <i class='bx bxs-star-half' ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination js-testi-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- testi end -->
 
     <!-- footer  -->
      <div class="footer-section">
@@ -288,5 +415,6 @@
 
     <!-- js -->
     <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

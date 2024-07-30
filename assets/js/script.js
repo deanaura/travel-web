@@ -28,3 +28,19 @@ document.addEventListener("DOMContentLoaded", function () {
     cardList.style.transform = `translateX(-${scrollPosition}px)`;
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper('.js-testi-slider', {
+    grabCursor: true,
+    spaceBetween: 30,
+    pagination: {
+      el: '.js-testi-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 2
+      }
+    }
+  });
+});
