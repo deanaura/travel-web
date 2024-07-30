@@ -18,6 +18,11 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+section {
+  margin-top: 100px;
+  padding: 0 100px;
+}
+
 /* navbar */
 nav {
   display: flex;
@@ -179,17 +184,16 @@ nav li a:hover {
 
 /* about */
 .about-container {
-  margin: 70px 100px;
-  padding: 30px 0;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .about-img img {
-  width: 100%;
+  margin-left: 100px;
+  width: 30%;
   height: auto;
-  max-width: 50vw;
+  width: 40vw;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
@@ -262,6 +266,60 @@ nav li a:hover {
 .about-row-items p {
   font-size: 14px;
   color: #666;
+}
+
+/* service */
+.service-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.service-container h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.service-container span {
+  color: #157107;
+}
+
+.service-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.service-item {
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 calc(25% - 40px);
+  max-width: calc(25% - 40px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+}
+
+.service-item i {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 14px;
 }
 
 /* detination section */
@@ -564,5 +622,10 @@ nav li a:hover {
 
   .about-row-items p {
     font-size: 12px;
+  }
+
+  .service-item {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
   }
 }
