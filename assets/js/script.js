@@ -4,43 +4,33 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const btnMundur = document.querySelector(".btn-mundur");
-  const btnMaju = document.querySelector(".btn-maju");
-  const cardList = document.querySelector(".card-list");
-
-  const cardWidth = 220; // Adjusted to include gap
-  const maxScroll = cardList.scrollWidth - cardList.clientWidth;
-  let scrollPosition = 0;
-
-  btnMundur.addEventListener("click", () => {
-    scrollPosition -= cardWidth * 1;
-    if (scrollPosition < 0) {
-      scrollPosition -= scrollPosition;
-    }
-    cardList.style.transform = `translateX(-${scrollPosition}px)`;
-  });
-
-  btnMaju.addEventListener("click", () => {
-    scrollPosition += cardWidth * 1;
-    if (scrollPosition > maxScroll) {
-      scrollPosition = maxScroll;
-    }
-    cardList.style.transform = `translateX(-${scrollPosition}px)`;
+  const swiper = new Swiper(".js-testi-slider", {
+    grabCursor: true,
+    spaceBetween: 30,
+    pagination: {
+      el: ".js-testi-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 2,
+      },
+    },
   });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper('.js-testi-slider', {
+  const swiper = new Swiper(".js-destination-slider", {
     grabCursor: true,
     spaceBetween: 30,
     pagination: {
-      el: '.js-testi-pagination',
-      clickable: true
+      el: ".js-desti-pagination",
+      clickable: true,
     },
     breakpoints: {
       767: {
-        slidesPerView: 2
-      }
-    }
+        slidesPerView: 4,
+      },
+    },
   });
 });
